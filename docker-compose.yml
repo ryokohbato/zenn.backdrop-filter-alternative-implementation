@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  app:
+    container_name: "vue-cli"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "18080:8080"
+    volumes:
+      - ./app:/home/local-user/app
