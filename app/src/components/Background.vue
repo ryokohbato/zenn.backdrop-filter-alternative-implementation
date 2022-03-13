@@ -1,7 +1,7 @@
 <template>
-  <div class="background">
-  </div>
+  <div class="background"/>
 </template>
+
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 

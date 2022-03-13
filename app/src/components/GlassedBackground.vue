@@ -1,7 +1,7 @@
 <template>
-  <div class="background" :style="clipPath">
-  </div>
+  <div class="background" :style="clipPath"/>
 </template>
+
 <script lang="ts">
 export default {
   data () {
