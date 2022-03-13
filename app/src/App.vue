@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <LoginForm></LoginForm>
+    <LoginForm/>
   </div>
 </template>
 
@@ -25,6 +25,10 @@ html {
   background-size: cover;
   height: 100%;
   width: 100%;
+}
+
+body {
+  margin: 0;
 }
 
 #app {
