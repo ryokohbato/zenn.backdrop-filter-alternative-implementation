@@ -1,15 +1,21 @@
 <template>
   <div id="app">
-    <LoginForm/>
+    <Background/>
+    <GlassedBackground class="glassed-background"/>
+    <LoginForm class="login-form"/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import Background from "./components/Background.vue";
+import GlassedBackground from "./components/GlassedBackground.vue";
 import LoginForm from "./components/LoginForm.vue";
 
 @Component({
   components: {
+    Background,
+    GlassedBackground,
     LoginForm,
   },
 })
@@ -19,10 +25,6 @@ export default class App extends Vue {}
 <style lang="scss">
 html {
   background-color: #222;
-  background-image: url("./assets/background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100%;
   width: 100%;
 }
@@ -35,7 +37,18 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
   text-align: center;
-  margin-top: 60px;
+
+  .glassed-background {
+    position: absolute;
+    top: 0;
+  }
+
+  .login-form {
+    margin-top: 60px;
+    position: absolute;
+    top: 0;
+  }
 }
 </style>
