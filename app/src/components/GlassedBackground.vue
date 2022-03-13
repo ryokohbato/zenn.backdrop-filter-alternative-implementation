@@ -34,10 +34,10 @@ export default {
     }
   },
   mounted () {
-    window.addEventListener('resize', this.resizeHandler)
+    window.addEventListener('resize', this.resizeHandler);
   },
   beforeDestroy () {
-    window.removeEventListener('resize', this.resizeHandler)
+    window.removeEventListener('resize', this.resizeHandler);
   }
 }
 </script>
@@ -48,7 +48,6 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // clip-path: inset(60px 647.5px 410px 647.5px round 8px);
   filter: saturate(1.5) blur(12px);
   height: 100vh;
   width: 100vw;
