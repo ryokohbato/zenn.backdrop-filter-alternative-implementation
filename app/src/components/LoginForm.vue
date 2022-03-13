@@ -71,7 +71,6 @@ export default class LoginForm extends Vue {
         outline: 0;
         transition: all .3s;
       }
-
     }
 
     &__submit {
