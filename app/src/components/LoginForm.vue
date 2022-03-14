@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="form">
-      <img class="icon" src="../assets/ryokohbato.png" alt="" />
+      <img class="icon" src="../assets/ryokohbato.png" alt="ryokohbato's icon" />
       <p class="name">ryokohbato</p>
       <div class="password">
         <input
